@@ -1,0 +1,7 @@
+{
+  "name": "GAC - Gestor de Ambiente Controlado",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
