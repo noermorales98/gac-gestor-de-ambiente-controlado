@@ -1,0 +1,19 @@
+.header-md::after {
+    display: none;
+}
+
+ion-card{
+    display: flex;
+    border-radius: 10px;
+    height: 40%;
+}
+
+ion-card-header{
+    float: left;
+    width: 50%;
+}
+
+ion-card-content{
+    float: right;
+    width: 50%;
+}
