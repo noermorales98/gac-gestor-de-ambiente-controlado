@@ -10,36 +10,41 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-item lines="none" color="transparent"><ion-title>Temperatura y humedad</ion-title><ion-icon name="thermometer"></ion-icon></ion-item>
-  <ion-card>
+  <ion-card id="temp">
     <ion-card-header>
-      <ion-card-subtitle>Celsius</ion-card-subtitle>
       <ion-card-title>Temperatura</ion-card-title>
+      <ion-card-subtitle>Celsius</ion-card-subtitle>
     </ion-card-header>
   
     <ion-card-content>
-      <circle-progress
+      <div id="circulo">
+        <circle-progress
         [percent]="85"
         [outerStrokeColor]="'#2dd36f'"
         [animation]="true"
         [animationDuration]="300">
       </circle-progress>
+      </div>
     </ion-card-content>
   </ion-card>
 
-  <ion-card>
+  <ion-card id="humedad" >
     <ion-card-header>
-      <ion-card-subtitle>g/m3</ion-card-subtitle>
-      <ion-card-title>Humedad</ion-card-title>
+      <ion-card-title><ion-icon size="large" name="thermometer"></ion-icon></ion-card-title>
+      <ion-card-subtitle>30ºF</ion-card-subtitle>
     </ion-card-header>
-  
     <ion-card-content>
-      <circle-progress
-        [percent]="45"
-        [title]="'45'"
-        [animation]="true"
-        [animationDuration]="300">
-      </circle-progress>
+      Fahrenheit
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card id="estado">
+    <ion-card-header>
+      <ion-card-title><ion-icon size="large" name="water"></ion-icon></ion-card-title>
+      <ion-card-subtitle>20%</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Humedad
     </ion-card-content>
   </ion-card>
 
