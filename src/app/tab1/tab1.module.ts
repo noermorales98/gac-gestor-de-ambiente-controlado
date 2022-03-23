@@ -23,7 +23,7 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
       "outerStrokeGradientStopColor": "#53a9ff",
       "innerStrokeColor": "#e7e8ea",
       "innerStrokeWidth": 10,
-      "title": "87" + "ºC",
+      "title": "35" + "ºC",
       "showUnits": false,
       "showTitle": true,
       "titleColor" : "var(--ion-color-dark)",

@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="transparent" >
     <ion-title>
-      Control
+      GAC
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,6 +12,13 @@
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class="contenido">
+    <ion-button>
+      <ion-icon slot="start" name="add"></ion-icon>
+    </ion-button>
+    <h4>Temperatura</h4>
+    <ion-button>
+      <ion-icon slot="start" name="remove"></ion-icon>
+    </ion-button>
+  </div>
 </ion-content>

@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="transparent">
     <ion-title>
-      Tab 2
+      GAC
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card id="temp" color="transparent">
+    <ion-card-header>
+      <ion-card-title>Detector de Humo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div><ion-icon id="happy" name="happy" color="#000000"></ion-icon></div>
+      <div class="estrella" *ngFor="let a of [1,1,1,1]">
+        <ion-icon name="star"></ion-icon>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
