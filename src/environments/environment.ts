@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: "AIzaSyAsvcPiljOoPEtnlVD6g8pOVCncefynySU",
+    authDomain: "gac-iot.firebaseapp.com",
+    databaseURL: "https://gac-iot-default-rtdb.firebaseio.com",
+    projectId: "gac-iot",
+    storageBucket: "gac-iot.appspot.com",
+    messagingSenderId: "1002938500186",
+    appId: "1:1002938500186:web:dc9059b25cb9274fbb8463"
+  }
 };
 
 /*
