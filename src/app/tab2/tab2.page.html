@@ -6,16 +6,38 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" *ngFor="let datos of datos">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-card id="temp" color="transparent">
+  <ion-card id="temp" color="transparent" *ngIf="datos.airval < 120">
     <ion-card-header>
-      <ion-card-title>Detector de Humo</ion-card-title>
+      <ion-card-title>Ambiente controlado</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div><ion-icon id="happy" name="happy" color="#000000"></ion-icon></div>
+      <div class="estrella" *ngFor="let a of [1,1,1,1]">
+        <ion-icon name="star"></ion-icon>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card id="temp" color="transparent" *ngIf="datos.airval >= 120 && datos.airval < 200 ">
+    <ion-card-header>
+      <ion-card-title>Advertencia del ambiente</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div><ion-icon id="happy" name="happy" color="#000000"></ion-icon></div>
+      <div class="estrella" *ngFor="let a of [1,1,1,1]">
+        <ion-icon name="star"></ion-icon>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card id="temp" color="transparent" *ngIf="datos.airval >= 200">
+    <ion-card-header>
+      <ion-card-title>Peligro maximo</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <div><ion-icon id="happy" name="happy" color="#000000"></ion-icon></div>

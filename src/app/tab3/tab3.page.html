@@ -6,19 +6,21 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <div class="contenido">
-    <ion-button>
-      <ion-icon slot="start" name="add"></ion-icon>
-    </ion-button>
-    <h4>Temperatura</h4>
-    <ion-button>
-      <ion-icon slot="start" name="remove"></ion-icon>
-    </ion-button>
-  </div>
+<ion-content [fullscreen]="true" *ngFor="let datos of datos">
+  <ion-card id="temp" color="transparent" *ngIf="datos.movval == 'True'">
+    <ion-card-header>
+      <ion-card-title>Movimiento detectato</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div><ion-icon id="happy" name="warning" color="#000000"></ion-icon></div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card id="temp" color="transparent" *ngIf="datos.movval == 'False'">
+    <ion-card-header>
+      <ion-card-title>No hay movimiento</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div><ion-icon id="happy" name="shield-checkmark" color="#000000"></ion-icon></div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -7,3 +7,29 @@ ion-button{
     align-content: center;
     align-items: center;
 }
+
+.header-md::after {
+    display: none;
+}
+
+ion-card{
+    text-align: center;
+    height: 90%;
+    vertical-align: middle;
+    //display: flex;
+    align-items: center;
+    box-shadow: none;
+}
+
+
+#happy{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 30px;
+}
+
+.estrella{
+    margin: 0;
+    display: inline;
+    font-size: 20px;
+}
