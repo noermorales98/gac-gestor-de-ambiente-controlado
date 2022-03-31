@@ -7,20 +7,16 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" *ngFor="let datos of datos">
-  <ion-card id="temp" color="transparent" *ngIf="datos.movval == 'True'">
-    <ion-card-header>
-      <ion-card-title>Movimiento detectato</ion-card-title>
-    </ion-card-header>
+  <ion-card id="temp" color="transparent" *ngIf="datos.movval == 'True'" style="display: flex; align-items: center; justify-content: center;">
     <ion-card-content>
-      <div><ion-icon id="happy" name="warning" color="#000000"></ion-icon></div>
+      <ion-card-title style="margin-bottom: 20px; font-weight: bolder;">Movimiento detectato</ion-card-title>
+      <div><ion-icon style="color: var(--ion-color-warning);" id="happy" name="warning" ></ion-icon></div>
     </ion-card-content>
   </ion-card>
-  <ion-card id="temp" color="transparent" *ngIf="datos.movval == 'False'">
-    <ion-card-header>
-      <ion-card-title>No hay movimiento</ion-card-title>
-    </ion-card-header>
+  <ion-card id="temp" color="transparent" *ngIf="datos.movval == 'False'" style="display: flex; align-items: center; justify-content: center;">
     <ion-card-content>
-      <div><ion-icon id="happy" name="shield-checkmark" color="#000000"></ion-icon></div>
+      <ion-card-title style="margin-bottom: 20px; font-weight: bolder;">No hay movimiento</ion-card-title>
+      <div><ion-icon style="color: var(--ion-color-success);" id="happy" name="shield-checkmark"></ion-icon></div>
     </ion-card-content>
   </ion-card>
 </ion-content>

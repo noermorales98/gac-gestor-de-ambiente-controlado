@@ -13,35 +13,29 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card id="temp" color="transparent" *ngIf="datos.airval < 120">
-    <ion-card-header>
-      <ion-card-title>Ambiente controlado</ion-card-title>
-    </ion-card-header>
+  <ion-card id="temp" color="transparent" *ngIf="datos.airval < 120" style="display: flex; align-items: center; justify-content: center;">
     <ion-card-content>
-      <div><ion-icon id="happy" name="happy" color="#000000"></ion-icon></div>
-      <div class="estrella" *ngFor="let a of [1,1,1,1]">
+      <ion-card-title style="margin-bottom: 20px; font-weight: bolder;" >Ambiente controlado</ion-card-title>
+      <div><ion-icon style="color: var(--ion-color-success);" color="success" id="happy" name="happy"></ion-icon></div>
+      <div style="color: var(--ion-color-success);" class="estrella" *ngFor="let a of [1,1,1,1,1]">
         <ion-icon name="star"></ion-icon>
       </div>
     </ion-card-content>
   </ion-card>
-  <ion-card id="temp" color="transparent" *ngIf="datos.airval >= 120 && datos.airval < 200 ">
-    <ion-card-header>
-      <ion-card-title>Advertencia del ambiente</ion-card-title>
-    </ion-card-header>
+  <ion-card id="temp" color="transparent" *ngIf="datos.airval >= 120 && datos.airval < 200 " style="display: flex; align-items: center; justify-content: center;">
     <ion-card-content>
-      <div><ion-icon id="happy" name="happy" color="#000000"></ion-icon></div>
-      <div class="estrella" *ngFor="let a of [1,1,1,1]">
+      <ion-card-title style="margin-bottom: 20px; font-weight: bolder;">Advertencia<br>del ambiente</ion-card-title>
+      <div><ion-icon style="color: var(--ion-color-warning);" id="happy" name="alert-circle"></ion-icon></div>
+      <div style="color: var(--ion-color-warning);" class="estrella" *ngFor="let a of [1,1,1]">
         <ion-icon name="star"></ion-icon>
       </div>
     </ion-card-content>
   </ion-card>
-  <ion-card id="temp" color="transparent" *ngIf="datos.airval >= 200">
-    <ion-card-header>
-      <ion-card-title>Peligro maximo</ion-card-title>
-    </ion-card-header>
+  <ion-card id="temp" color="transparent" *ngIf="datos.airval >= 200" style="display: flex; align-items: center; justify-content: center;">
     <ion-card-content>
-      <div><ion-icon id="happy" name="happy" color="#000000"></ion-icon></div>
-      <div class="estrella" *ngFor="let a of [1,1,1,1]">
+      <ion-card-title style="margin-bottom: 20px; font-weight: bolder;">Peligro máximo</ion-card-title>
+      <div><ion-icon style="color: var(--ion-color-danger)" id="happy" name="nuclear" ></ion-icon></div>
+      <div style="color: var(--ion-color-danger)" class="estrella" *ngFor="let a of [1]">
         <ion-icon name="star"></ion-icon>
       </div>
     </ion-card-content>
