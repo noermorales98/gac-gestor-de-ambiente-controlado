@@ -8,6 +8,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 
+
+
+
 @NgModule({
   imports: [
     IonicModule,
@@ -23,16 +26,19 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
       "outerStrokeGradientStopColor": "#53a9ff",
       "innerStrokeColor": "#e7e8ea",
       "innerStrokeWidth": 10,
-      "title": "35" + "ºC",
       "showUnits": false,
+      "title":"Bienvenido",
+      "subtitle":"°Centigrados",
       "showTitle": true,
       "titleColor" : "var(--ion-color-dark)",
       "animateTitle": false,
-      "animationDuration": 1000,
-      "showSubtitle": false,
+      "animation": false,
+      "animationDuration": 0,
+      "showSubtitle": true,
       "showBackground": false,
       "clockwise": false,
       "responsive": true,
+      "lazy":false,
       "startFromZero": false,
       "showZeroOuterStroke": false})
   ],

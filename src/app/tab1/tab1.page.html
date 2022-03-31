@@ -1,3 +1,4 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <ion-header [translucent]="true">
   <ion-toolbar color="transparent">
     <ion-buttons slot="primary">
@@ -10,6 +11,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" *ngFor="let dato of datos" >
+
+
+  
   <ion-card id="temp">
     <ion-card-header >
       <ion-card-title>Temperatura</ion-card-title>
@@ -21,11 +25,11 @@
     <ion-card-content>
       <div id="circulo"> 
         <circle-progress 
-        [percent]="100"
-        [title]="40"
+        [percent]="dato.tempval*2.5"
+        [title]="dato.tempval"
         [outerStrokeColor]="'#2dd36f'"
-        [animation]="true"
-        [animationDuration]="300">
+        [animation]="false"
+        [animationDuration]="0">
       </circle-progress>
       </div>
     </ion-card-content>
@@ -34,7 +38,7 @@
   <ion-card id="humedad" >
     <ion-card-header>
       <ion-card-title><ion-icon size="large" name="thermometer"></ion-icon></ion-card-title>
-      <ion-card-subtitle>{{dato.airval}}</ion-card-subtitle>
+      <ion-card-subtitle>{{(dato.tempval* 9/5) + 32 }}°F</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
       Fahrenheit
@@ -44,12 +48,11 @@
   <ion-card id="estado">
     <ion-card-header>
       <ion-card-title><ion-icon size="large" name="water"></ion-icon></ion-card-title>
-      <ion-card-subtitle>{{dato.humval}}</ion-card-subtitle>
+      <ion-card-subtitle>{{dato.humval}}%</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
       Humedad
     </ion-card-content>
   </ion-card>
-
 
 </ion-content>
