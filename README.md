@@ -4,6 +4,10 @@ Aplicacion para controlar el Arduino, sensor de temperatura, humedad, gas y movi
 
 Es una aplicación hecha con IONIC
 
+Home                        |  Tab humo                 |  Tab move
+:-------------------------:|:-------------------------: |:-------------------------:
+![](/images/home.png)    |  ![](/images/tabhumo.png)   |  ![](/images/tabmove.png)
+
 ### Home - Humedad y Temperatura
 ![alt text](/images/home.png)
 
@@ -12,10 +16,4 @@ Es una aplicación hecha con IONIC
 
 ### Tab Movimiento - Moviento
 ![alt text](/images/tabmove.png)
-
-Home                        |  Tab humo                 |  Tab move
-:-------------------------:|:-------------------------: |:-------------------------:
-![](/images/home.png)    |  ![](/images/tabhumo.png)   |  ![](/images/tabmove.png)
-
-      
 
