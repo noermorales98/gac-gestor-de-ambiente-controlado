@@ -8,12 +8,3 @@ Home                        |  Tab humo                 |  Tab move
 :-------------------------:|:-------------------------: |:-------------------------:
 ![](/images/home.png)    |  ![](/images/tabhumo.png)   |  ![](/images/tabmove.png)
 
-### Home - Humedad y Temperatura
-![alt text](/images/home.png)
-
-### Tab Humo - Gas
-![alt text](/images/tabhumo.png)
-
-### Tab Movimiento - Moviento
-![alt text](/images/tabmove.png)
-
