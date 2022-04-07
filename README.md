@@ -12,3 +12,10 @@ Es una aplicación hecha con IONIC
 
 ### Tab Movimiento - Moviento
 ![alt text](/images/tabmove.png)
+
+Home                        |  Tab humo                 |  Tab move
+:-------------------------:|:-------------------------: |:-------------------------:
+![](/images/home.png)    |  ![](/images/tabhumo.png)   |  ![](/images/tabmove.png)
+
+      
+
